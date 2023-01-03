@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+body {
+  background-image: linear-gradient(#1e5ed6 0%, #bde0f0 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: "East Sea Dokdo", cursive;
+}
+
+header {
+  font-family: "East Sea Dokdo", cursive;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 100px;
+}
+
+.header__subtitle {
+  font-size: 60px;
+}
+
+.page {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 100px auto;
+  padding: 100px auto;
+}
+
+.enclosure {
+  display: flex;
+  border: 5px black dashed;
+  width: 500px;
+  height: 100vh;
+  position: relative;
+  /*justify-content: center;
+    /*align-items: center;*/
+}
+
+.circle {
+  background-color: teal;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  position: absolute;
+  left: -20%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.circle:hover {
+  animation: rotation 2s linear;
+}
+
+.circle_text {
+  height: 200px;
+  width: 200px;
+  /*background-color: blue;*/
+  font-size: 30px;
+  color: white;
+}
+
+.diamond {
+  background-color: blueviolet;
+  height: 300px;
+  width: 300px;
+  rotate: 45deg;
+  position: absolute;
+  right: -20%;
+  bottom: 30%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.diamond:hover {
+  animation: rotation 2s linear;
+}
+
+.diamond_text {
+  height: 200px;
+  width: 200px;
+  /*background-color: red;*/
+  rotate: -45deg;
+  font-size: 30px;
+  color: white;
+}
+/*
+.cat {
+    border: 10px blue solid;
+}
+*/
+.cat_ear {
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 70px solid pink; /*blanchedalmond;*/
+  position: absolute;
+}
+
+.ear1 {
+  left: 15%;
+  bottom: 10%;
+  rotate: -30deg;
+}
+
+.ear2 {
+  left: 55%;
+  bottom: 10%;
+  rotate: 30deg;
+}
+
+.cat_head {
+  background-color: blanchedalmond;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  position: absolute;
+  left: 15%;
+  bottom: -20%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.cat_text {
+  height: 200px;
+  width: 200px;
+  /*background-color: blue;*/
+  font-size: 30px;
+  color: black;
+}
+
+.cat_head:hover,
+.cat_ear:hover {
+  animation: rotation 2s linear;
+}
